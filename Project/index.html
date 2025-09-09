@@ -5,10 +5,11 @@
     <title>FirstProject</title>
 
     <link rel="stylesheet" href="css/style.css">
-
-    <meta http-equiv="Content-type" contant="text/html;charset=UFT-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -18,29 +19,34 @@
             <div class="background__blur"></div>
             <div class="background__blur"></div>
         </div>
-        <div class="header">
+        <header>
             <div class="header__gaslur">Gaslur</div>
-            <ul class="header__list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">My profile</a></li>
-                <li><a href="#">activity</a></li>
-                <li><a href="#">how it works</a></li>
-            </ul>
+            <nav class="header__nav">
+                <ul>
+                    <a href="#">Home</a>
+                    <a href="#">My profile</a>
+                    <a href="#">activity</a>
+                    <a href="#">how it works</a>
+                </ul>
+            </nav>
+            <div class="header__burger">
+                <span></span>
+            </div>
             <div class="header__create-sign">
                 <button>create</button>
                 <button>sign in</button>
             </div>
-        </div>
-        <div class="main-banner">
-            <div class="main-banner__info">
+        </header>
+        <main>
+            <section class="main-banner__info">
                 <p class="main-banner__title">Discover, collect,  and charity in extraordinary NFT marketplace</p>
                 <p class="main-banner__subtitle">In aenean posuere lorem risus nec. Tempor tincidunt aenean purus purus vestibulum nibh mi venenatis</p>
                 <div class="main-banner__buttons">
                     <button>Explore</button>
                     <button>Create</button>
                 </div>
-            </div>
-            <div class="main-banner__card">
+            </section>
+            <section class="main-banner__card">
                 <img class="main-banner__card-image" src="/img/unsplash_OG44d93iNJk.png" alt="">
                 <div class="main-banner__card-info">
                     <div class="main-banner__user-info">
@@ -60,8 +66,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </main>
         <div class="auctions">
             <div class="auctions__header">
                 <h2 class="auctions__hot-auctions">Hot auctions</h2>
@@ -169,10 +175,10 @@
                         <p class="discover__newest-text">Newest</p>
                         <img src="/img/icons/cheveron-down.svg" alt="" class="discover__newest-icon">
                     </div>
-                    <div class="discover__filter-button">
+                    <button class="discover__filter-button">
                         <img src="/img/icons/filter.svg" alt="" class="discover__button-icon">
-                        <a class="discover__button-text">Filter</a>
-                    </div>
+                        <p class="discover__button-text">Filter</p>
+                    </button>
                 </div>
             </div>
             <div class="discover__catalog">
@@ -273,11 +279,11 @@
                     </div>
                 </div>
             </div>
+            <div class="discover__load-button">
+                <button class="discover__load-more-button">Load more</button>
+            </div>
         </div>
-        <div class="load__button">
-            <button class="load-more-button">Load more</button>
-        </div>
-        <div class="footer">
+        <footer class="footer">
             <div class="footer__navigation-block">
                 <p class="footer__text">Etiam et id tincidunt faucibus mollis a sociis pretium fermentum quis magna faucibus lacus.</p>
                 <div class="footer__colums-block">
@@ -317,6 +323,7 @@
                 </div>
                 <p class="footer__copyright">Copyright 2021 Gaslur</p>
             </div>
-        </div>
+        </footer>
+        <script src="js/script.js"></script>
     </body>
 </html>
